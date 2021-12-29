@@ -1,0 +1,4 @@
+function check(num){
+    num>11?console.log("lesses"):console.log("greater");
+}
+check(5)

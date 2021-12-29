@@ -1,0 +1,18 @@
+//Using Binary Search Approach with O(logn) Time Complexity.
+function checkPerfectSquare(val){
+    if(val==1) return true;
+    var low = 0 ;
+    var high = Math.floor(val/2);
+    while(low<high){
+        var mid = Math.floor((low+high)/2);
+        if(mid*mid==val) return true;
+        else if(mid*mid>val){
+            high = mid-1;
+        }else{
+            low = mid+1;
+        }
+    }
+    return false;
+}
+var res = checkPerfectSquare(101)
+console.log(res);

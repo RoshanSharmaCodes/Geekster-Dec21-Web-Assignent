@@ -1,0 +1,30 @@
+class G_class{
+    constructor(){
+        this.s_list = [
+            {
+                name:"roshan",
+                marks:76
+            },
+            {
+                name:"vikas",
+                marks:88
+            },
+            {
+                name:"rajat",
+                marks:12
+            },
+            {
+                name:"raj",
+                marks:100
+            },
+        ]
+    }
+}
+
+var list = new G_class();
+var li = list.s_list;
+for(var i=0;i<li.length;i++){
+    if(li[i]["marks"]>=85){
+        console.log(li[i]["name"]);
+    }
+}
